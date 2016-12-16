@@ -130,7 +130,7 @@ public class MortgageController implements Initializable {
 		if (lRequest.getiTerm() == 30 && payment <  (lRequest.getIncome() -lRequest.getExpense() * 0.28) 
 				|| lRequest.getiTerm() == 15 && payment <  (lRequest.getIncome() -lRequest.getExpense())*0.28) {
 			
-			mortgageLabel.setText("The mouthly payment is $" + finalResult);
+			mortgageLabel.setText("The monthly payment is $" + finalResult);
 		} else {
 			mortgageLabel.setVisible(false);
 			costtoohighLabel.setVisible(true);
